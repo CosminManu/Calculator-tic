@@ -1,33 +1,55 @@
-body{
-    background-color:#B1DBF3;
-  }
-  #calculator{
-    width:240px;
-  }
-  button{
-    width:60px;
-    height:60px;
-    background-color:#388095;
-    border: 1px solid #304156;
-  }
-  #butoane{
-   font-size:0px; 
-  }
-  #zero{
-    width:120px;
-  }
-  #cifre{
-    width:75%;
-    float:left;
-  }
-  #cifre button{
-    background-color:#28354F;
-  }
-  #restbutoane{
-    float:right;
-    width:25%; 
-  }
-  #egal{
-    height:120px;
-    background-color:#DA8128;
-  }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e9db4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px;
+}
+
+#display {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
