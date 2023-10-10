@@ -1,14 +1,35 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
 </head>
+
 <body>
+  <div id="calculator">
+    <div id="display"> 
+      <p>0</p>
+    </div>
     
+    <div id="butoane">
+      <div>
+		<button class="actiuni" onclick="myFunction(this.innerHTML)">C</button>
+		<button class="actiuni" onclick="myFunction(this.innerHTML)">Sterge</button>
+		<button class="actiuni" onclick="myFunction(this.innerHTML)">/</button>
+		<button class="actiuni" onclick="myFunction(this.innerHTML)">x</button>
+      </div>
+      <div>
+        <div id="cifre">
+  
+        </div>
+        <div id="restbutoane">
+			<button class="actiuni" onclick="myFunction(this.innerHTML)">-</button>
+			<button class="actiuni" onclick="myFunction(this.innerHTML)">+</button>
+			<button id="egal" class="actiuni" onclick="myFunction(this.innerHTML)">=</button>
+        </div>
+      
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
