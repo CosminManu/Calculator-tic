@@ -1,10 +1,20 @@
-console.log("acces granted")
+let displayValue = "";
 
-const button = document.querySelector("#doSmth")
-//console.log(button)
+function appendToDisplay(value) {
+    displayValue += value;
+    document.getElementById("display").value = displayValue;
+}
 
-button.addEventListener("click", printButtonText)
+function clearDisplay() {
+    displayValue = "";
+    document.getElementById("display").value = "";
+}
 
-function printButtonText(e) {
-    console.log(e.target.innerText)
+function calculateResult() {
+    try {
+        displayValue = eval(displayValue);
+        document.getElementById("display").value = displayValue;
+    } catch (error) {
+        document.getElementById("display").value = "Error";
+    }
 }
